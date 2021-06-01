@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+}
+
+#time {
+  font-size: 10em;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  opacity: 0.9;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+span,
+h2:focus {
+  outline: none;
+}
