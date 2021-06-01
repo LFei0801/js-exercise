@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>打字游戏</title>
+  </head>
+  <body>
+    <button class="setting">
+      <i class="fas fa-cog"></i>
+    </button>
+
+    <div class="form-container">
+      <form>
+        <label for="diffcuity">难度设置</label>
+        <select id="diffcuity">
+          <option value="easy">简单</option>
+          <option value="medium">中等</option>
+          <option value="hard">困难</option>
+        </select>
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>打字游戏</h2>
+      <small>本局字母为：</small>
+      <h1 id="word"></h1>
+      <input
+        type="text"
+        id="text"
+        autocomplete="off"
+        placeholder="请输入字母..."
+      />
+      <p class="time-container">剩余时间：<span id="time">10s</span></p>
+      <p class="score-container">游戏得分：<span id="score">0</span></p>
+      <div id="end-game-container" class="end-game-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
