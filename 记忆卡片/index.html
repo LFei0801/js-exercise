@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>记忆卡片</title>
+  </head>
+  <body>
+    <button id="clear" class="clear btn">
+      <i class="fas fa-trash"></i> 一键清除
+    </button>
+
+    <h1>
+      记忆卡片
+      <button id="show" class="btn btn-small">
+        <i class="fas fa-plus"></i>添加新卡片
+      </button>
+    </h1>
+
+    <div class="cards" id="cards-container">
+      <!-- <div class="card active">
+        <div class="inner-card">
+          <div class="inner-card-front">
+            <p>是什么JavaScript?</p>
+          </div>
+          <div class="inner-card-back">
+            <p>
+              JavaScript（简称“JS”）
+              是一种具有函数优先的轻量级，解释型或即时编译型的编程语言。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card left">
+        <div class="inner-card">
+          <div class="inner-card-front">
+            <p>ECMAScript和JavaScript的关系？</p>
+          </div>
+          <div class="inner-card-back">
+            <p>
+              JavaScript的标准是ECMAScript，JS由ECMAScript，文档对象模型（DOM），浏览器对象模型（BOM）组成。
+            </p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <div class="navigation">
+      <button id="prev" class="nav-button">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <p id="current"></p>
+      <button id="next" class="nav-button">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <div id="add-container" class="add-container show">
+      <h1>
+        添加新卡片
+        <button id="hide" class="btn btn-small btn-ghost">
+          <i class="fas fa-times"></i>
+        </button>
+      </h1>
+      <div class="form-group">
+        <label for="question">问题</label>
+        <textarea id="question" placeholder="请输入问题..."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="answer">答案</label>
+        <textarea id="answer" placeholder="请输入答案..."></textarea>
+      </div>
+      <button id="add-card" class="btn">
+        <i class="fas fa-plus"></i>添加卡片
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
